@@ -1,0 +1,9 @@
+bind KEY weaponswitch
+alias weaponswitch weapons1
+alias weapons1 "slot1;alias weaponswitch weapons2"
+alias weapons2 "slot2;alias weaponswitch weapons1"
+
+bind \ mutegame
+alias mutegame mute
+alias mute "volume 0; alias mutegame unmute"
+alias unmute "volume 0,5; alias mutegame mute"
